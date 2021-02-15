@@ -1,0 +1,21 @@
+.main-footer {
+    padding-top: 3em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+.main-scroll::-webkit-scrollbar{
+  height:2px;
+}
+.main-scroll::-webkit-scrollbar-track{
+    background:white
+}
+.main-scroll::-webkit-scrollbar-thumb{
+    background:#1F2937;
+    border-radius: 25px;
+}
+.main-scroll
+{
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
