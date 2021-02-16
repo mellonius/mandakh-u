@@ -7,7 +7,7 @@ import useStartAnimation from "../hook/useStartAnimation";
 import bgdark from "../assets/images/teachers.jpg";
 import bgschool from "../assets/images/school3.jpg";
 import bglight from "../assets/images/home-hero.jpg";
-import VideoIntro from "../assets/video/intro.mp4";
+import VideoIntro from "../assets/videos/intro.mp4";
 // import { ThemeContext } from '../theme';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";

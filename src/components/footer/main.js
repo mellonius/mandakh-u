@@ -95,7 +95,6 @@ export default function HomeMain() {
       </div>
       {/* <DecoratorBlob1 />
       <DecoratorBlob2 /> */}
-      
     </div>
   );
 };
