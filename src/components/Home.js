@@ -15,6 +15,7 @@ import Homefooter from "./footer/footer";
 import HomeAbout from "./about/about";
 import HomeLink from "./services/link";
 import HomeSocial from "./social/social";
+import HomeProfile from "./school/aboutTeach";
 import FbNews from "./fbNews";
 import HomeSchool from "./school/school";
 import HomeContact from "./contact/contact";
@@ -121,10 +122,14 @@ function Home() {
       
         <br />
         <HomeSocial />
-        <FbNews />
+        <HomeProfile/>
+        
         <br />
         <hr />
         <br />
+        <FbNews />
+        <br/>
+        <br/>
         <HomeAbout />
         <br />
         <br />
