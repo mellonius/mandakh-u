@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "./nav.css";
-import { Link, HashRouter } from "react-router-dom";
+import { Link, BrowserRouter as Router } from "react-router-dom";
 import { Switch, Route } from "react-router";
 import { ThemeContext, LanguageContext } from "../../theme";
 import Home from "../Home";
@@ -14,6 +14,7 @@ import light from "../../assets/images/mandakh-light.png";
 import logoeng from "../../assets/images/englogo.png";
 import lighteng from "../../assets/images/light-eng-logo.png";
 import ScrollToTop from "react-scroll-up";
+import {BackTop } from 'antd';
 function NavBar() {
   const { theme, setTheme } = useContext(ThemeContext);
   const { language, setLanguage } = useContext(LanguageContext);
@@ -122,17 +123,20 @@ function NavBar() {
 
       <div className="margint w-full font-serif">
         <ScrollToTop showUnder={100} />
-        <HashRouter>
+        <Router>
           <Switch>
             <Route path="/home" exact component={Home} />
             <Route path="/home/News" exact component={HomeNews} />
             <Route path="/home/Teacher" exact component={HomeTeacher} />
             <Route path="/home/Contact" exact component={HomeContact} />
           </Switch>
-        </HashRouter>
+        </Router>
       </div>
+      <BackTop/>
     </>
+    
   );
+  
 }
 
 

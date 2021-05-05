@@ -22,6 +22,8 @@ import HomeContact from "./contact/contact";
 // import HomeTeacher from "./school/teacher";
 import HomeFaqs from "./faqs/faqs";
 import HomeMain from "./footer/main";
+import News from "./news";
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 function Home() {
   // const { theme } = useContext(ThemeContext)
@@ -62,6 +64,7 @@ function Home() {
   };
   return (
     <div>
+      <ParallaxProvider>
       <Carousel
         responsive={responsive}
         infinite={true}
@@ -127,6 +130,10 @@ function Home() {
         <br />
         <hr />
         <br />
+        <News/>
+        <br />
+        <hr />
+        <br />
         <FbNews />
         <br/>
         <br/>
@@ -148,7 +155,9 @@ function Home() {
         <HomeContact />
         <br />
         <Homefooter />
+        </ParallaxProvider>
         </div>
+        
   );
 }
 export default Home;

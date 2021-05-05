@@ -12,6 +12,7 @@ import { ReactComponent as LinkedinIcon} from "../../assets/icons//facebook-icon
 import { ReactComponent as GithubIcon } from "../../assets/icons//youtube-icon.svg";
 import { ReactComponent as SvgDecoratorBlob1 } from "../../assets/icons//svg-decorator-blob-7.svg";
 import { ReactComponent as SvgDecoratorBlob2 } from "../../assets/icons//svg-decorator-blob-8.svg";
+
 const HeadingContainer = tw.div` dark:text-white text-gray-800`
 const Heading = tw(SectionHeading)` dark:text-white text-gray-800`
 const Subheading = tw(SubheadingBase)`text-center mb-3`

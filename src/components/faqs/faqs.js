@@ -38,7 +38,7 @@ const DecoratorBlob2 = styled(SvgDecoratorBlob2)`
 
 
 
-export default ({
+export default function Faqs ({
   subheading = "Түгээмэл асуултууд",
   heading = "Танд ямар нэгэн асуулт бий юу ?",
   description = "",
@@ -103,7 +103,7 @@ export default ({
         
     }
   ]
-}) => {
+}) {
   const [activeQuestionIndex, setActiveQuestionIndex] = useState(null);
 
   const toggleQuestion = questionIndex => {
